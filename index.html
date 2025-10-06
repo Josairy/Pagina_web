@@ -3,34 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página - Electiva 2</title>
+    <title>Portfolio - Josairy</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #0d1117;
+            color: #c9d1d9;
         }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
+        
         .container {
-            background: white;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 2px solid #30363d;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #8b949e;
+        }
+        
+        .content {
+            margin-top: 50px;
+        }
+        
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .card h2 {
+            color: #58a6ff;
+            margin-bottom: 15px;
+        }
+        
+        .card p {
+            color: #c9d1d9;
+            margin: 10px 0;
+        }
+        
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: #238636;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #2ea043;
+        }
+        
+        .btn-secondary {
+            background: #21262d;
+            color: #c9d1d9;
+            border: 1px solid #30363d;
+        }
+        
+        .btn-secondary:hover {
+            background: #30363d;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenido a mi Página Web</h1>
-        <h2>Proyecto Electiva 2</h2>
-        <p>Esta es mi página web creada con GitHub Pages.</p>
-        <p>Estudiante: [Tu nombre]</p>
-        <p>Fecha: Octubre 2025</p>
+        <header>
+            <h1>Josairy</h1>
+            <p class="subtitle">Estudiante de Desarrollo Web | Electiva 2</p>
+        </header>
+        
+        <div class="content">
+            <div class="card">
+                <h2>📖 Sobre este Proyecto</h2>
+                <p>Esta página web ha sido creada como parte del proyecto de la materia Electiva 2, utilizando GitHub Pages para el deployment automático.</p>
+            </div>
+            
+            <div class="card">
+                <h2>🛠️ Tecnologías Utilizadas</h2>
+                <p>• HTML5 y CSS3</p>
+                <p>• GitHub Pages</p>
+                <p>• Git y GitHub</p>
+                <p>• Gestión de proyectos con GitHub Projects</p>
+            </div>
+            
+            <div class="card">
+                <h2>🎯 Objetivos del Proyecto</h2>
+                <p>✓ Crear y gestionar repositorios en GitHub</p>
+                <p>✓ Implementar GitHub Pages</p>
+                <p>✓ Utilizar herramientas de gestión de proyectos</p>
+                <p>✓ Desarrollar una página web responsive</p>
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/Josairy/Electiva_2" class="btn btn-primary" target="_blank">Ver Repositorio</a>
+            <a href="https://github.com/Josairy" class="btn btn-secondary" target="_blank">Mi Perfil GitHub</a>
+        </div>
     </div>
 </body>
 </html>
