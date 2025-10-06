@@ -3,131 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josairy - Electiva 2</title>
+    <title>Portfolio - Josairy</title>
     <style>
-        * {
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background: #0d1117;
+            color: #c9d1d9;
         }
         
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
         
-        .card {
-            background: white;
-            max-width: 600px;
-            width: 100%;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            animation: fadeIn 1s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 2px solid #30363d;
         }
         
         h1 {
-            color: #667eea;
-            font-size: 2.5em;
+            font-size: 3em;
+            color: #58a6ff;
             margin-bottom: 10px;
-            text-align: center;
         }
         
-        h2 {
-            color: #764ba2;
-            font-size: 1.5em;
+        .subtitle {
+            font-size: 1.2em;
+            color: #8b949e;
+        }
+        
+        .content {
+            margin-top: 50px;
+        }
+        
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 30px;
             margin-bottom: 20px;
-            text-align: center;
-            font-weight: normal;
         }
         
-        .info-section {
-            margin: 30px 0;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
+        .card h2 {
+            color: #58a6ff;
+            margin-bottom: 15px;
         }
         
-        .info-item {
-            margin: 15px 0;
-            color: #333;
-            font-size: 1.1em;
+        .card p {
+            color: #c9d1d9;
+            margin: 10px 0;
         }
         
-        .info-item strong {
-            color: #667eea;
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
         }
         
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        .github-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 30px;
-            background: #667eea;
-            color: white;
+        .btn {
+            padding: 12px 24px;
+            border-radius: 6px;
             text-decoration: none;
-            border-radius: 25px;
+            font-weight: bold;
             transition: all 0.3s;
         }
         
-        .github-link:hover {
-            background: #764ba2;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        .btn-primary {
+            background: #238636;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #2ea043;
+        }
+        
+        .btn-secondary {
+            background: #21262d;
+            color: #c9d1d9;
+            border: 1px solid #30363d;
+        }
+        
+        .btn-secondary:hover {
+            background: #30363d;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1> Josairy</h1>
-        <h2>Proyecto Electiva 2</h2>
+    <div class="container">
+        <header>
+            <h1>Josairy</h1>
+            <p class="subtitle">Estudiante de Desarrollo Web | Electiva 2</p>
+        </header>
         
-        <div class="info-section">
-            <div class="info-item">
-                <strong> Materia:</strong> Electiva 2
+        <div class="content">
+            <div class="card">
+                <h2> Sobre este Proyecto</h2>
+                <p>Esta página web ha sido creada como parte del proyecto de la materia Electiva 2, utilizando GitHub Pages para el deployment automático.</p>
             </div>
-            <div class="info-item">
-                <strong> Proyecto:</strong> GitHub Pages y Gestión de Proyectos
+            
+            <div class="card">
+                <h2> Tecnologías Utilizadas</h2>
+                <p>• HTML5 y CSS3</p>
+                <p>• GitHub Pages</p>
+                <p>• Git y GitHub</p>
+                <p>• Gestión de proyectos con GitHub Projects</p>
             </div>
-            <div class="info-item">
-                <strong> Fecha:</strong> Octubre 2025
-            </div>
-            <div class="info-item">
-                <strong> Tecnologías:</strong> HTML, CSS, GitHub Pages
+            
+            <div class="card">
+                <h2> Objetivos del Proyecto</h2>
+                <p>✓ Crear y gestionar repositorios en GitHub</p>
+                <p>✓ Implementar GitHub Pages</p>
+                <p>✓ Utilizar herramientas de gestión de proyectos</p>
+                <p>✓ Desarrollar una página web responsive</p>
             </div>
         </div>
         
-        <div style="text-align: center;">
-            <a href="https://github.com/Josairy/Electiva_2" class="github-link" target="_blank">
-                Ver Repositorio en GitHub
-            </a>
-        </div>
-        
-        <div class="footer">
-            <p>Creado con GitHub Pages </p>
+        <div class="links">
+            <a href="https://github.com/Josairy/Electiva_2" class="btn btn-primary" target="_blank">Ver Repositorio</a>
+            <a href="https://github.com/Josairy" class="btn btn-secondary" target="_blank">Mi Perfil GitHub</a>
         </div>
     </div>
 </body>
